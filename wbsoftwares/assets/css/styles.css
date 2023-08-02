@@ -1036,6 +1036,7 @@ header{
 .b-item-main{
     background: #F7FAFD;
     transition: .3s all ease-in-out;
+    height: 100%;
 }
 .b-item-main:hover{
     box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);

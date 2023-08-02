@@ -1,0 +1,180 @@
+
+
+
+/* Table-Section-start */
+.card-section{
+    padding: 20px;
+}
+.table-search{
+
+}
+.ts-icon{
+    background-color: #fff !important;
+    cursor: pointer;
+    color: #b1aeae !important;
+}
+
+.ts-input{
+    color:#080808 !important ;
+    border-left: 0px !important;
+    padding-left: 0px !important;
+}
+.ts-input:focus{
+    outline: 0 none !important;
+    border-color:  #ced4da !important;
+    box-shadow: none !important;
+}
+.table-custom{
+    margin-top: 15px !important;
+}
+.table-button{
+    display: flex;
+    justify-content: end;
+}
+.tbtn-custom{
+    font-weight: 500;
+    color: #444545;
+    background: #fac077;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: .3s ease;
+}
+.tbtn-custom:hover{
+    color: #ffff;  
+    background: #F7961D;
+}
+.tbtn-custom:last-child{
+    margin-right: 0px;
+}
+.tbtn-custom i{
+    margin-right: 10px;
+}
+.table-custom th{
+    font-weight: 500;
+    color: #b1aeae  !important;
+}
+.table-custom td{
+    font-size: 14px;
+    font-weight: 500 !important;
+    color: #b1aeae;
+    text-transform: capitalize;
+}
+.table-custom .td-span {
+    font-size: 12px !important;
+    color: red !important;
+}
+.table-custom td .td-login-time{
+    font-size: 12px;
+    color: #b1aeae;
+    background: #FCF9F9 !important;
+    border-radius: 5px !important;
+}
+.table-custom td .td-two-step{
+    font-size: 12px;
+    color: #4DCFB0;
+    background: #E8FFF3 !important;
+    border-radius: 5px !important;
+}
+.table-custom td .table-form-cus{
+    font-size: 14px;
+    font-weight: 500;
+    color: #b1aeae;
+    background-color: #FCF9F9;
+    border: 0px !important;
+}
+.table-custom td .table-form-cus option:hover{
+    border-radius: 5px !important;
+    background-color: #FCF9F9 !important;
+}
+.table-custom td .table-form-cus:focus {
+    outline: none;
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+.table-drop{
+
+}
+.table-drop a{
+    
+}
+.table-drop a i{
+
+}
+/* Table-section-end */
+
+/* Pagination-Start */
+.pagination-custom{
+
+}
+/* Pagination-End */
+
+/* -----------Media-Query----------- */
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .fn-menu li a {
+        font-size: 22px;
+    }
+    .fn-menu li a i {
+        display: inline-block;
+        margin-right: 10px !important;
+    }
+    /* Table-Start */
+    .table-button{
+        display: flex;
+        justify-content: center !important;
+        margin-top: 15px;
+    }
+    .tbtn-custom {
+        padding: 8px 17px;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .table-custom {
+        
+    }
+    .table-custom th{
+        font-size: 10px !important;
+    }
+    /* Table-End */
+ }
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .fn-menu li a {
+        font-size: 22px;
+    }
+    .fn-menu li a i {
+        display: inline-block;
+        margin-right: 10px !important;
+    }
+    .table-custom th{
+        font-size: 12px !important;
+    }
+ }
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .fn-menu li a {
+        font-size: 22px;
+    }
+    .fn-menu li a i {
+        display: inline-block;
+        margin-right: 10px !important;
+    }
+    .table-custom th{
+        font-size: 14px !important;
+    }
+ }
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1299.98px) { 
+   
+ }
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+
+ }

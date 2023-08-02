@@ -1,0 +1,80 @@
+/* Dashboard-Start */
+
+/* BreadCumbe start */
+.dash-bread{
+
+}
+.dash-bread .dash-bread-titel{
+
+}
+.dash-breadcrumb{
+
+}
+/* BreadCumbe end */
+.dashboard-main{
+    padding: 20px 0px;
+}
+
+.dash-content{
+    padding: 30px !important;
+}
+.dash-content .dash-title{
+    font-size: 28px;
+    font-weight: 500;
+    color: #444545;
+    letter-spacing: 2px;
+}
+.dash-content .dash-summary{
+    font-size: 18px;
+    font-weight: 700;
+    color: #444545;
+    letter-spacing: 2px;
+    margin-bottom: 10px !important;
+}
+.dash-summary .d-s-no{
+    color: #7e8299;
+}
+.dash-content .dash-btn{
+
+}
+/* Dashboard-End */
+
+/* ----------------------Media---------------------- */
+
+@media (max-width: 575.98px){
+    .dash-content .dash-summary {
+        font-size: 16px;
+    }
+    .dash-content .dash-title {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .dash-content .dash-summary {
+        font-size: 16px;
+    }
+    .dash-content .dash-title {
+        font-size: 20px;
+    }
+ }
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .dash-content .dash-summary {
+        font-size: 16px;
+    }
+    .dash-content .dash-title {
+        font-size: 22px;
+    }
+ }
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1299.98px) { 
+   
+ }
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+
+ }

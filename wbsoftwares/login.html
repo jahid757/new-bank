@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Table</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Custom-CSS -->
+    <link rel="stylesheet" href="./assets/css/wbcustom.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <!-- Font-Awesome -->
+    <script src="https://kit.fontawesome.com/02a829a1e2.js" crossorigin="anonymous"></script>
+    <!-- google-font -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="col-md-12 bg-main shadow-box">
+                <nav class="navbar navbar-expand-lg first-nav p-2">
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand mx-0" href="#">
+                        <img src="./assets/img/wbSoftwaresLogo.png" alt="WB Softwares ltd." class="img-fluid"></a>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <img src="./assets/img/wbSoftwaresLogo.png" alt="WB Softwares ltd." class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 fn-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link  active" aria-current="page" href="#" id="mainMenuDropList" role="button" aria-expanded="false">Lead</a>
+                                    <ul class="dropdown-menu fn-menu-dropdown" aria-labelledby="mainMenuDropList">
+                                        <li class="fn-menu-dropdown-li"><a class="dropdown-item fn-menu-dropdown-item" href="#"><i class="fas fa-th-large"></i>Lead List</a></li>
+                                        <li class="fn-menu-dropdown-li"><a class="dropdown-item fn-menu-dropdown-item" href="#"><i class="fas fa-th-large"></i>My Lead</a></li>
+                                        <li class="fn-menu-dropdown-li"><a class="dropdown-item fn-menu-dropdown-item" href="#"><i class="fas fa-th-large"></i>Lead Alert</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Project</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Report</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blogs</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link  active" aria-current="page" href="#" id="mainMenuDropList" role="button" aria-expanded="false">Others</a>
+                                    <ul class="dropdown-menu fn-menu-dropdown" aria-labelledby="mainMenuDropList">
+                                        <li class="fn-menu-dropdown-li"><a class="dropdown-item fn-menu-dropdown-item" href="#"><i class="fas fa-th-large"></i>Carrer</a></li>
+                                        <li class="fn-menu-dropdown-li"><a class="dropdown-item fn-menu-dropdown-item" href="#"><i class="fas fa-th-large"></i>Job Request</a></li>
+                                        <li class="fn-menu-dropdown-li"><a class="dropdown-item fn-menu-dropdown-item" href="#"><i class="fas fa-th-large"></i>Contact Form</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Settings</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <!-- <a href="#">
+                    <img src="./assets/img/profilePic.png" class="rounded float-end" alt="profilePic">
+                    </a> -->
+                    <div class="dropdown open d-none">
+                        <a href="#" class="wbHeaderForm" type="button" id="profileId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="./assets/img/profilePic.png" alt="profilePictures">
+                        </a>
+                        <div class="dropdown-menu p-0 d-menu-custom " aria-labelledby="profileId">
+                            <div class="menu-content d-flex align-items-center p-3 margin-bottom">
+                                <!--begin::Avatar-->
+                                <div class="symbol me-2">
+                                    <img class="rounded-circle" src="./assets/img/profilePic.png" height="40" width="40">
+                                </div>
+                                <!--end::Avatar-->
+                                <!--begin::Username-->
+                                <div class="d-flex flex-column">
+                                    <div class="profile-name d-flex align-items-center">Admin
+                                    </div>
+                                    <a href="#" class="profile-email">admindhaka@gmail.com</a>
+                                </div>
+                                <!--end::Username-->
+                            </div>
+                            <div class="menu-item">
+                                <a href="#" class="menu-link p-3 margin-bottom">My Profile</a>
+                                <a href="#" class="menu-link p-3">Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- login-section-start -->
+    <section class="login">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-5 col-md-8 col-12">
+                    <div class="login-content bg-main shadow-box rounded-3">
+                        <h2 class="login-title">Sign In</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="loginInputEmail" class="form-label form-text">Email address</label>
+                                <input type="email" class="form-control input-form-custom" id="loginInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address">
+                            </div>
+                            <div class="mb-3">
+                                <div class="login-pssword d-flex justify-content-between">
+                                    <label for="loginInputPassword" class="form-label form-text">Password</label>
+                                    <label for="loginInputPassword" class="form-label form-text"><a href="#">Forget Passowrd ?</a></label>
+                                </div>
+                                <input type="password" class="form-control input-form-custom" id="loginInputPassword" placeholder="Enter Password">
+                            </div>
+                            <div class="submit-wrapper ">
+                                <button type="submit" class="btn login-btn btn-primary" name="submit">Sign In</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- login-section-end -->
+    <!-- Footer-Section-Start -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="single">
+                        <div class="f-img">
+                            <img src="./assets/img/wbSoftwaresLogo.png" alt="wbSoftwaresLogo">
+                        </div>
+                        <div class="f-con">
+                            <p>
+                                WB SOFTWARES is a Bangladesh based software and other IT consulting company which focuses on building fast, secure and reliable solutions for increasing your productivity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 padding-left-custom">
+                    <div class="single">
+                        <div class="single-title">
+                            <h3>Company</h3>
+                        </div>
+                        <ul class="f-menu f-menu-link">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Services View</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="single">
+                        <div class="single-title">
+                            <h3>Blogs</h3>
+                        </div>
+                        <ul class="f-menu f-menu-link">
+                            <li><a href="#">Need an app?</a></li>
+                            <li><a href="#">Need an online website?</a></li>
+                            <li><a href="#">Need digital marketing?</a></li>
+                            <li><a href="#">Need an eCommerce?</a></li>
+                            <li><a href="#">Need a software?</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single">
+                        <div class="single-title">
+                            <h3>Address</h3>
+                        </div>
+                        <ul class="f-menu f-add">
+                            <li><i class="fas fa-map-marker-alt"></i>House# 433, Flat# 3B, Road# 30, New DOHS Mohakhali, Dhaka</li>
+                            <li><i class="fas fa-envelope"></i>Email: mail@wbsoftwares.com</li>
+                            <li><i class="fas fa-phone-alt"></i>Phone: +8809696863000</li>
+                            <li><i class="fas fa-phone-alt"></i>Phone: +8801774444000</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Copy-Right-Section -->
+                <div class="col-md-12">
+                    <div class="copy-text">
+                        <p class="mb-0">Copyright ©2021 WB SOFTWARES. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="map-img">
+                <img src="./assets/img/map.caeeab2f.png" alt="worldmap">
+            </div> -->
+        </div>
+    </footer>
+
+    <!-- Footer-Section-End -->
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

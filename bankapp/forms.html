@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./js/fontawesome.icon.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Bank System | Create Account</title>
+</head>
+<body>
+    <div class="mobile_body no_scroll" style="background-color: #F4F8FB;">
+        <div class="container h-100">
+            <div class="header">
+                <img src="./images/logo.svg" alt="logo">
+            </div>
+            <form autocomplete="off" class="needs-validation card" novalidate>
+                
+                <h3 class="text-center heading_text">Registration</h3>
+            
+                <div class="single_input">
+                    <i class="fa-solid fa-user"></i>
+                    <input autocomplete="off" class="form-control"  type="text" placeholder="Name" required>
+                </div>
+            
+                <div class="single_input">
+                    <i class="fa-solid fa-phone"></i>
+                    <input autocomplete="off" type="text" placeholder="Mobile" required class="form-control">
+                </div>
+            
+                <div class="single_input">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input autocomplete="off" type="email" placeholder="Email" required class="form-control">
+                </div>
+
+                <div class="single_input">
+                    
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="date" placeholder="YYYY-MM-DD" name="date" id="date" class="form-control"style="
+                    background: #fff;
+                ">
+                </div>
+                
+            
+                <div class="single_input d-flex align-items-center gap-2 gender">
+                    <input type="text" name="gender" id="genderValue" value="male">
+                    <a onclick="genderToggle('male_btn','female_btn','male_btn')" id="male_btn" class="primary_btn d-flex align-items-center justify-content-center active" for="male">
+                        <i class="fa-solid fa-mars"></i>Male
+                    </a>
+
+                    <a onclick="genderToggle('male_btn','female_btn','female_btn')" id="female_btn" class="primary_btn d-flex align-items-center justify-content-center" for="female">
+                        <i class="fa-solid fa-venus"></i>Female
+                    </a>
+                    
+                </div>
+            
+                <div class="single_input">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <select autocomplete="off" name="profession" id="proffesion" required class="form-control">
+                        <option value="banker">Banker</option>
+                        <option value="gvEmploy">Gov Employ</option>
+                    </select>
+                </div>
+            
+                <div class="single_input">
+                    <i class="fa-solid fa-lock"></i>
+                    <input autocomplete="off" type="password" placeholder="Password" required class="form-control">
+                </div>
+
+            
+                <div class="single_input">
+                    <i class="fa-solid fa-lock"></i>
+                    <input autocomplete="off" type="password" placeholder="Confirm Password" required class="form-control">
+                </div>
+
+                <div class="single_input">
+                    <div class="select_imgWith_preview ">
+                        <img class="box-shadow" id="uploadPreview" src="./images/img_preview.png"/>
+                        <div class="d-flex flex-column w-50">
+                            <button class="btn primary_btn"> Change
+                                <input id="uploadImage" type="file" name="myPhoto" onchange="PreviewImage('uploadImage','uploadPreview');" />
+                            </button>
+                            <a onclick="cancelPreview('uploadPreview')" class="btn btn-danger"><span>Cancel</span></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="single_input">
+                    <div class="select_imgWith_preview ">
+                        <img style="border-radius: 50%;" class="box-shadow" id="uploadPreview_2" src="./images/img_preview.png"/>
+                        <div class="d-flex flex-column w-50">
+                            <button class="btn primary_btn"> Change
+                                <input id="uploadImage_2" type="file" name="myPhoto" onchange="PreviewImage('uploadImage_2','uploadPreview_2');" />
+                            </button>
+                            <a onclick="cancelPreview('uploadPreview_2')" class="btn btn-danger"><span>Cancel</span></a>
+                        </div>
+                      </div>
+                </div>
+
+            <div class="condition pt-2">
+                <label class="d-flex mt-2 align-items-center gap-2" for="role"><input type="checkbox" name="role" id="role">Agree with <a href="#">Terms & Conditions</a></label>
+                <label class="mt-2" for="login">Already have an account? <a href="/login">login</a></label>
+                <button id="submit_btn" type="submit" class="primary_btn">Registration</button>
+            </div>
+            </form>
+            
+        </div>
+        <div class="bottom_nav p-2 ">
+            <div class="d-flex justify-content-center text-center">
+                <a href="dashboard.html" class="col">
+                    <div class="menu_item active">
+                        <i class="fa-solid fa-house"></i>
+                        <p>Home</p>
+                    </div>
+                </a>
+                
+                <a href="login.html" class="col">
+                    <div class="menu_item">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <p>Login</p>
+                    </div>
+                </a>
+
+                <a href="registration.html" class="col">
+                    <div class="menu_item">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <p>Register</p>
+                    </div>
+                </a>
+
+                <a href="contact.html" class="col">
+                    <div class="menu_item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Contact</p>
+                    </div>
+                </a>
+
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("input[type=date]", {
+        dateFormat: "Y-m-d",
+      });
+    </script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+  const submitBtn = document.getElementById('submit_btn')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+        submitBtn.addEventListener('click', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    </script>
+</body>
+</html>
